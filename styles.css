@@ -1,3 +1,4 @@
+/* Default styles for all screen sizes */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,6 +10,7 @@ header {
   color: #fff;
   padding: 20px;
 }
+
 footer {
   background-color: #236969;
   color: white;
@@ -74,4 +76,41 @@ h2 {
 
 p {
   line-height: 1.5;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide (tablets and smaller) */
+  header {
+    padding: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for screens up to 480px wide (mobile) */
+  section {
+    padding: 30px;
+  }
+
+  .project {
+    margin-bottom: 10px;
+  }
 }
